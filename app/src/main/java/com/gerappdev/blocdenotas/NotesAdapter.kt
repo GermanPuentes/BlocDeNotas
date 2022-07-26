@@ -46,7 +46,7 @@ class NotesAdapter (notes: ArrayList<Note>, context: Context): RecyclerView.Adap
         date?.text = note.date
 
         container?.setOnClickListener{
-            //Go to note dateil
+            NoteDetail.start(contex, note.title, note.date, note.content)
         }
 
     }
